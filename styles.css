@@ -1,0 +1,36 @@
+body{
+    text-align: center;
+    background-image: radial-gradient(circle at center center, rgba(33, 33, 33, 0), rgb(33, 33, 33)),
+    repeating-linear-gradient(135deg, rgb(33, 33, 33) 0px, rgb(33, 33, 33) 1px, transparent 1px, transparent 4px),
+    repeating-linear-gradient(45deg, rgb(56, 56, 56) 0px, rgb(56, 56, 56) 5px, transparent 5px, transparent 6px),
+    linear-gradient(90deg, rgb(33, 33, 33), rgb(33, 33, 33));
+    color: white;
+}
+
+#jeu{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr); /*répéter 3fois la taille 1 fraction*/
+    width: 300px;
+    margin: auto; /* centre la grille */
+}
+
+.case{
+    border: 1px solid rgb(165, 159, 159);
+    height: 100px;
+    cursor: pointer;
+    line-height: 150%;
+    font-size: 60px;
+}
+
+button{
+    position: absolute;
+    padding: 15px 25px;
+    left: 45%;
+    border-radius: 3px;
+    border: 2px solid #fa7827;
+    background-color: #b65315;
+    color: #e4d3db;
+    font-weight: bolder;
+    cursor: pointer;
+    outline-style: none;
+}
